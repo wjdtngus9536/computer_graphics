@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.33423.256
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_03_HelloGLFW", "01_03_HelloGLFW\01_03_HelloGLFW.vcxproj", "{7BD4A13D-99EA-4790-AAB5-58BCF55E7321}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_04_cbColor", "01_04_cbColor\01_04_cbColor.vcxproj", "{B30AF008-3899-47C1-9167-4D90FEF53469}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_04_CbColor", "01_04_cbColor\01_04_cbColor.vcxproj", "{B30AF008-3899-47C1-9167-4D90FEF53469}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_02_VecAttrVary", "02_02_VecAttrVary\02_02_VecAttrVary.vcxproj", "{694DBB17-F1D1-4A38-BA6A-F3F8E5494231}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,14 @@ Global
 		{B30AF008-3899-47C1-9167-4D90FEF53469}.Release|x64.Build.0 = Release|x64
 		{B30AF008-3899-47C1-9167-4D90FEF53469}.Release|x86.ActiveCfg = Release|Win32
 		{B30AF008-3899-47C1-9167-4D90FEF53469}.Release|x86.Build.0 = Release|Win32
+		{694DBB17-F1D1-4A38-BA6A-F3F8E5494231}.Debug|x64.ActiveCfg = Debug|x64
+		{694DBB17-F1D1-4A38-BA6A-F3F8E5494231}.Debug|x64.Build.0 = Debug|x64
+		{694DBB17-F1D1-4A38-BA6A-F3F8E5494231}.Debug|x86.ActiveCfg = Debug|Win32
+		{694DBB17-F1D1-4A38-BA6A-F3F8E5494231}.Debug|x86.Build.0 = Debug|Win32
+		{694DBB17-F1D1-4A38-BA6A-F3F8E5494231}.Release|x64.ActiveCfg = Release|x64
+		{694DBB17-F1D1-4A38-BA6A-F3F8E5494231}.Release|x64.Build.0 = Release|x64
+		{694DBB17-F1D1-4A38-BA6A-F3F8E5494231}.Release|x86.ActiveCfg = Release|Win32
+		{694DBB17-F1D1-4A38-BA6A-F3F8E5494231}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
