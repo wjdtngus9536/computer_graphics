@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="13b-hello-glew.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="13a-hello-glfw.c">
       <Filter>소스 파일</Filter>
     </ClCompile>

@@ -1,4 +1,6 @@
-﻿13b-hello-glew.obj : error LNK2005: WIN_H이(가) 13a-hello-glfw.obj에 이미 정의되어 있습니다.
-13b-hello-glew.obj : error LNK2005: WIN_W이(가) 13a-hello-glfw.obj에 이미 정의되어 있습니다.
-13b-hello-glew.obj : error LNK2005: main이(가) 13a-hello-glfw.obj에 이미 정의되어 있습니다.
-C:\Users\Suhyeon\Desktop\computer_graphics\cg\x64\Release\01_03_HelloGLFW.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
+﻿  코드를 생성하고 있습니다.
+  1 of 1 functions (100.0%) were compiled.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  01_03_HelloGLFW.vcxproj -> C:\Users\Suhyeon\Desktop\경북대학교\01_컴퓨터 그래픽스\computer_graphics\cg\x64\Release\01_03_HelloGLFW.exe
