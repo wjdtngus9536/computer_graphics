@@ -16,8 +16,12 @@ void refreshFunc(GLFWwindow* window) {
 	// refresh
 	printf("refresh called\n");
 	fflush(stdout);
+
+	//
 	glClear(GL_COLOR_BUFFER_BIT);
+	//
 	glFinish();
+	
 	// GLFW action
 	glfwSwapBuffers(window);
 }
@@ -29,6 +33,9 @@ int main(int argc, char* argv[]) {
 #else // Unix, Linux, MacOS
 	char* win_name = (strrchr(argv[0], '/') == NULL) ? argv[0] : (strrchr(argv[0], '/') + 1);
 #endif
+
+
+
 	// start GLFW & GLEW
 	glfwInit();
 	GLFWwindow* window = glfwCreateWindow(WIN_W, WIN_H, win_name, NULL, NULL);
@@ -37,7 +44,10 @@ int main(int argc, char* argv[]) {
 	glewInit();
 	// prepare
 	glfwSetWindowRefreshCallback(window, refreshFunc);
+
+	// 밝은 옥색으로 윈도우 버퍼 컬러 설정
 	glClearColor(0.5F, 0.8F, 0.8F, 1.0F);
+
 	// main loop
 	while (! glfwWindowShouldClose(window)) {
 		// draw

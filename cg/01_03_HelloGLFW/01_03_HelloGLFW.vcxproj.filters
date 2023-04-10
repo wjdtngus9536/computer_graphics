@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="13a-hello-glfw.c">
+    <ClCompile Include="hello_glad.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

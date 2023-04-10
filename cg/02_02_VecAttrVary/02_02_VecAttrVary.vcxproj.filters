@@ -18,5 +18,8 @@
     <ClCompile Include="22b-two-tri.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="22a-colored-tri.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
