@@ -92,6 +92,8 @@ void drawFunc(void) {
     glVertexAttribPointer(loc1, 4, GL_FLOAT, GL_FALSE, 0, vertPos1);
     // draw a triangle
     glDrawArrays(GL_TRIANGLES, 0, 3);
+
+    // 두 번째 삼각형 그리기
     GLuint loc2 = glGetAttribLocation(prog, "vertexPos");
     glEnableVertexAttribArray(loc2);
     glVertexAttribPointer(loc2, 4, GL_FLOAT, GL_FALSE, 0, vertPos2);
