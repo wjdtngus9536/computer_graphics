@@ -33,6 +33,7 @@ void initFunc(void) {
 	printf("vert compile status = %s\n", (status == GL_TRUE) ? "true" : "false");
 	glGetShaderInfoLog(vert, sizeof(buf), NULL, buf);
 	printf("vert log = [%s]\n", buf);
+
 	// frag: fragment shader
 	frag = glCreateShader(GL_FRAGMENT_SHADER);
 	glShaderSource(frag, 1, &fragSource, NULL);
@@ -41,23 +42,31 @@ void initFunc(void) {
 	printf("frag compile status = %s\n", (status == GL_TRUE) ? "true" : "false");
 	glGetShaderInfoLog(frag, sizeof(buf), NULL, buf);
 	printf("frag log = [%s]\n", buf);
+
 	// prog: program
 	prog = glCreateProgram();
 	glAttachShader(prog, vert);
 	glAttachShader(prog, frag);
 	glLinkProgram(prog); // link to get .EXE
+
 	glGetProgramiv(prog, GL_LINK_STATUS, &status);
 	printf("prog link status = %s\n", (status == GL_TRUE) ? "true" : "false");
 	glGetProgramInfoLog(prog, sizeof(buf), NULL, buf);
 	printf("link log = [%s]\n", buf);
+
+
 	glValidateProgram(prog);
+
 	glGetProgramiv(prog, GL_VALIDATE_STATUS, &status);
 	printf("prog validate status = %s\n", (status == GL_TRUE) ? "true" : "false");
+
 	glGetProgramInfoLog(prog, sizeof(buf), NULL, buf);
 	printf("validate log = [%s]\n", buf);
 	fflush(stdout);
+
 	// execute it!
 	glUseProgram(prog);
+
 	// done
 	free( (void*)vertSource );
 	free( (void*)fragSource );

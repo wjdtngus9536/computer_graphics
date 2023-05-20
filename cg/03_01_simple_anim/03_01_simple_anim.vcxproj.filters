@@ -15,21 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="31-rotate.frag">
-      <Filter>리소스 파일</Filter>
-    </None>
-    <None Include="31-rotate.vert">
-      <Filter>리소스 파일</Filter>
-    </None>
-    <None Include="31-uniform-tri.frag">
-      <Filter>리소스 파일</Filter>
-    </None>
-    <None Include="31-uniform-tri.vert">
-      <Filter>리소스 파일</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="31h-game.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="31f-rotate.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

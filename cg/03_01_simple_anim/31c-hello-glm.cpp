@@ -15,7 +15,7 @@ using namespace std;
 int main(void) {
 	// glm test
 	glm::vec4 a(1.0f, 2.0f, 3.0f, 1.0f);
-	glm::vec4 b = glm::vec4(2.0f, 3.0f, 1.0f, 1.0f);
+	glm::vec4 b = glm::vec4(2.0f, 3.0f, 1.0f, 1.0f);  
 	glm::vec4 c = a + b;
 	float d = glm::dot(a, b);
 	std::cout << glm::to_string(a) << " + " << std::endl;

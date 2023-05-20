@@ -30,7 +30,7 @@ const unsigned int WIN_Y = 100;
 const char* vertFileName = "31-uniform-tri.vert";
 const char* fragFileName = "31-uniform-tri.frag";
 
-GLuint vert = 0; // vertex shader ID number
+GLuint vert = 0; // vertex shader ID number 
 GLuint frag = 0; // fragment shader ID number
 GLuint prog = 0; // shader program ID number
 
