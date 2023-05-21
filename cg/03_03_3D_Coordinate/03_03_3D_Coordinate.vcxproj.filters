@@ -18,6 +18,15 @@
     <ClCompile Include="33d-pyramid3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="33c-pyramid2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="33b-pyramid.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="33e-rotate-pyramid.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="33-colored-tri.frag">

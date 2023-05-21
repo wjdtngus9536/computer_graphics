@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_02_depth_processing", "0
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_03_3D_Coordinate", "03_03_3D_Coordinate\03_03_3D_Coordinate.vcxproj", "{88548E18-E483-4C3E-BB3E-951C908750BE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_01_Coordinate_Transformation", "04_01_Coordinate_Transformation\04_01_Coordinate_Transformation.vcxproj", "{02D68185-ABCA-4D05-B543-13E0A411ED05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{88548E18-E483-4C3E-BB3E-951C908750BE}.Release|x64.Build.0 = Release|x64
 		{88548E18-E483-4C3E-BB3E-951C908750BE}.Release|x86.ActiveCfg = Release|Win32
 		{88548E18-E483-4C3E-BB3E-951C908750BE}.Release|x86.Build.0 = Release|Win32
+		{02D68185-ABCA-4D05-B543-13E0A411ED05}.Debug|x64.ActiveCfg = Debug|x64
+		{02D68185-ABCA-4D05-B543-13E0A411ED05}.Debug|x64.Build.0 = Debug|x64
+		{02D68185-ABCA-4D05-B543-13E0A411ED05}.Debug|x86.ActiveCfg = Debug|Win32
+		{02D68185-ABCA-4D05-B543-13E0A411ED05}.Debug|x86.Build.0 = Debug|Win32
+		{02D68185-ABCA-4D05-B543-13E0A411ED05}.Release|x64.ActiveCfg = Release|x64
+		{02D68185-ABCA-4D05-B543-13E0A411ED05}.Release|x64.Build.0 = Release|x64
+		{02D68185-ABCA-4D05-B543-13E0A411ED05}.Release|x86.ActiveCfg = Release|Win32
+		{02D68185-ABCA-4D05-B543-13E0A411ED05}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
