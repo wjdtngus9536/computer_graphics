@@ -22,9 +22,6 @@
     <None Include="41-set-mat4.frag" />
     <None Include="41-set-mat4.vert" />
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="41c-rotate3.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
