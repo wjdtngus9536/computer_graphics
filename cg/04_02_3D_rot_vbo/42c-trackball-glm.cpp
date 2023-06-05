@@ -2,6 +2,7 @@
 #error This file works only with C++
 #endif
 
+#define _CRT_SECURE_NO_WARNINGS
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include <chrono>
@@ -14,8 +15,8 @@ using namespace std::chrono;
 #define GLM_FORCE_SWIZZLE
 #include <glm/glm.hpp>
 #include <glm/gtx/quaternion.hpp>
-#include <glm/gtx/string_cast.hpp> // for glm::to_string()
-#include <glm/gtc/type_ptr.hpp> // for glm::value_ptr( )
+#include <glm/gtx/string_cast.hpp> // for glm::to_string() ??
+#include <glm/gtc/type_ptr.hpp> // for glm::value_ptr( ) ??
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -82,7 +83,7 @@ void initFunc(void) {
 }
 
 glm::vec4 vertPos[] = { // 6 * 3 = 18 vertices
-	// face 0: v0-v1-v2
+	// face 0: v0-v1-v2 면의 바깥쪽 면을 통일시켜야 하므로 오른손 법칙 사용한 정점 순서를 입력해야 하기에 (4 x GLfloat) (6 x 3) * 2 만큼 필요함 
 	{ 0.0F, 0.5F, 0.0F, 1.0F }, // v0
 	{ 0.5F, -0.3F, 0.0F, 1.0F }, // v1
 	{ 0.0F, -0.3F, -0.5F, 1.0F }, // v2
@@ -231,7 +232,7 @@ void drawFunc(void) {
 	// provide the vertex attributes
 	GLuint locPos = glGetAttribLocation(prog, "aPos");
 	glEnableVertexAttribArray(locPos);
-	glVertexAttribPointer(locPos, 4, GL_FLOAT, GL_FALSE, 0, glm::value_ptr(vertPos[0]));
+	glVertexAttribPointer(locPos, 4, GL_FLOAT, GL_FALSE, 0, glm::value_ptr(vertPos[0]));	
 	GLuint locColor = glGetAttribLocation(prog, "aColor");
 	glEnableVertexAttribArray(locColor);
 	glVertexAttribPointer(locColor, 4, GL_FLOAT, GL_FALSE, 0, glm::value_ptr(vertColor[0]));
@@ -255,17 +256,23 @@ int main(int argc, char* argv[]) {
 	// start GLFW & GLEW
 	glfwInit();
 	glfwWindowHint(GLFW_DOUBLEBUFFER, GLFW_TRUE);
+
 	GLFWwindow* window = glfwCreateWindow(WIN_W, WIN_H, basename, nullptr, nullptr);
 	glfwSetWindowPos(window, WIN_X, WIN_Y);
 	glfwMakeContextCurrent(window);
 	glewInit();
+
 	// prepare
 	glfwSetWindowRefreshCallback(window, refreshFunc);
+
 	glfwSetKeyCallback(window, keyFunc);
+
 	glfwSetCursorEnterCallback(window, cursorEnterFunc);
 	glfwSetCursorPosCallback(window, cursorPosFunc);
 	glfwSetMouseButtonCallback(window, mouseButtonFunc);
+
 	glClearColor(0.5F, 0.5F, 0.5F, 1.0F);
+
 	// main loop
 	initFunc();
 	while (! glfwWindowShouldClose(window)) {
