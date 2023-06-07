@@ -2,6 +2,7 @@
 #error This file works only with C++
 #endif
 
+#define _CRT_SECURE_NO_WARNINGS
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include <chrono>

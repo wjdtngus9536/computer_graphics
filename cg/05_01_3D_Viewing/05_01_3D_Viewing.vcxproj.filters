@@ -19,4 +19,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="51-set-mat4.frag">
+      <Filter>소스 파일</Filter>
+    </None>
+    <None Include="51-set-mat4.vert">
+      <Filter>소스 파일</Filter>
+    </None>
+  </ItemGroup>
 </Project>
